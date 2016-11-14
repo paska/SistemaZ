@@ -1,0 +1,29 @@
+<wicket:extend>
+	<br/>
+	<span>Se permite buscar expedientes por su c&oacute;digo, por ejemplo <i>EXP-12</i></span>
+	<br/><br/>
+	<center>
+		<form wicket:id="formBusqueda">
+			<table class="contenido">
+				<tr><th>C&oacute;digo de expediente</th><td><input type="text" wicket:id="codigoExpediente" size=8/></td></tr>
+			</table>
+			<br style="line-height: 3px;"/>
+			<input type="submit" wicket:id="submit" value="Buscar"/>
+		</form>
+	</center>
+	<span wicket:id="mensajes"></span>
+	<br/>
+	<br/>
+	<center>
+		<div class="sinmargen" wicket:id="resultado">
+			<table class="contenido">
+				<tr><th>N&uacute;mero</th><td><span wicket:id="numero"></span></td></tr>
+				<tr><th>Fecha creaci&oacute;n</th><td><span wicket:id="fechaCreacion"></span></td></tr>
+				<tr><th>Responsable</th><td><span wicket:id="responsable.nombre"></span></td></tr>
+				<tr><td class="separador">&nbsp;</td></tr>
+				<tr><th>T&iacute;tulo</th><td><span wicket:id="titulo"></span></td></tr>
+				<tr><th>Cuerpo</th><td><span wicket:id="cuerpo"></span></td></tr>
+			</table>
+		</div>
+	</center>
+</wicket:extend>

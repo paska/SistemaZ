@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    
+    	<!-- Configuracion de conexion -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/xy_sistemaz</property>
+        <property name="hibernate.connection.username">usuario_sistemaz</property>
+        <property name="hibernate.connection.password">clave_bd</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+        <!-- Opciones de hibernate -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+        <!-- Configuracion del pool de conexiones -->
+        <property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+		<property name="hibernate.c3p0.idle_test_period">600</property>
+		
+		<!-- Mapeo de entidades -->
+        <mapping class="com.xy.sistemaz.modelo.Usuario"/>
+        <mapping class="com.xy.sistemaz.modelo.Expediente"/>
+        
+    </session-factory>
+</hibernate-configuration>

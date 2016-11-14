@@ -1,0 +1,14 @@
+<wicket:extend>
+	<center><h2>Ingreso</h2></center>
+	<form wicket:id="formLogin">
+		<center>
+			<table class="login">
+				<tr><th>Usuario</th><td><input type="text" wicket:id="usuario"/></td></tr>
+				<tr><th>Clave</th><td><input type="password" wicket:id="clave"/></td></tr>
+			</table>
+			<br style="line-height: 3px;"/>
+			<input class="center" type="submit" wicket:id="submit" value="Entrar"/>
+		</center>
+	</form>
+	<span wicket:id="mensajes"></span>
+</wicket:extend>

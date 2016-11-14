@@ -1,0 +1,14 @@
+<wicket:extend>
+	<br/><br/>
+	<center>
+		<form wicket:id="formRegistro">
+			<table class="contenido">
+				<tr><th>T&iacute;tulo*</th><td><input type="text" wicket:id="titulo" size=50/></td></tr>
+				<tr><th>Cuerpo*</th><td><textarea wicket:id="cuerpo" cols="50" rows="6"></textarea></td></tr>
+			</table>
+			<br style="line-height: 3px;"/>
+			<input type="submit" wicket:id="submit" value="Registrar"/>
+		</form>
+	</center>
+	<span wicket:id="mensajes"></span>
+</wicket:extend>
